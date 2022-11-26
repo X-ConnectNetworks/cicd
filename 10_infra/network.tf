@@ -12,6 +12,7 @@ resource "aws_vpc" "vpc" {
     Name    = "${var.project}-${var.environment}-vpc"
     Project = var.project
     Env     = var.environment
+    CICD    = "GitHub"
   }
 }
 
